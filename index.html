@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.png" type="image/icon type">
+  <title>Art Tavern TEST</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+  <script src="lang.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <div class="logo"><a href="#"><img src="img/logo_home_red.svg" alt="home"></a></div>
+  <div class="wrapper">
+    <div class="content">
+      <nav class="main_nav">
+        <div class="main_nav_container ">
+          <select class="change-lang">
+            <option value="ru">rus</option>
+            <option value="en" selected>eng</option>
+            <option value="sp">esp</option>
+          </select>
+          <buttin id="menu" class="mobile" aria-label="Open Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="icon-close hidden" style="width: 2rem; 
+              height: 2rem; ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="icon-open" style="width: 2rem; 
+              height: 2rem; ">
+              <path class="icon-open" stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </buttin>
+          <div id="menubar" class="main_nav_links hidden blur">
+            <a href="#try_it" class="lng-nav_1">Try it yourself</a>
+            <a href="#plans_n_goals" class="lng-nav_2">About us</a>
+            <a href="#roadmap" class="lng-nav_3">Roadmap</a>
+            <a href="#our_team" class="lng-nav_4">Our team</a>
+            <a href="https://www.kickstarter.com/profile/arttavern" target="_blanc" class="lng-nav_5">Support us</a>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <a name="Home"></a>
+        <header class="main-header">
+          <div class="layers">
+            <div class="layer layers__title"></div>
+            <div class="layer layers__base"></div>
+            <div class="layer layers__middle"></div>
+            <div class="layer layers__front"></div>
+          </div>
+        </header>
+        <div class="header_description">
+          <div class="star-icon header_star mobile"> <img src="img/star_icon.svg" alt=""></div>
+          <p class="lng-site-name">Приветствуем тебя, о Странник! </p>
+          <div class="header_description_with_stars">
+            <div class="star-icon pc"> <img src="img/star_icon.svg" alt=""></div>
+            <p class="lng-title-description">С любовью и гордостью мы представляем тебе Art Tavern: редактор, который позволит самовыражаться через
+              создание своих собственных персонажей и их историй. Art Tavern это идеальный инструмент для успешного
+              участия в настольных ролевых играх (D&D, Pathfinder, etc), профессионального творчества и развлечения.
+            </p>
+            <div class="star-icon pc"> <img src="img/star_icon.svg" alt=""></div>
+          </div>
+        </div>
+      </header>
+      <section id="try_it" class="select_race">
+        <h2 class="lng-try-demo">ПОПРОБУЙ ДЕМО-ВЕРСИЮ ПРЯМО СЕЙЧАС:</h2>
+        <div class="select_race_cards_container">
+          <div class="select_race_card">
+            <img src="img/race_select_card_img_1.png" alt="">
+            <div class="select_race_card_title">
+              <h4 class="lng-race-1">Драконорожденный</h4>
+            </div>
+          </div>
+          <div class="select_race_card">
+            <img src="img/race_select_card_img_2.png" alt="">
+            <div class="select_race_card_title">
+              <h4 class="lng-race-2">Тифлинг</h4>
+            </div>
+          </div>
+          <div class="select_race_card">
+            <img src="img/race_select_card_img_3.png" alt="">
+            <div class="select_race_card_title">
+              <h4 class="lng-race-3">Дварф</h4>
+            </div>
+          </div>
+          <div class="select_race_card">
+            <div class="select_race_card_title and_more">
+              <h4 class="lng-race-and-more">and more...</h4>
+            </div>
+          </div>
+        </div>
+        <div class="link-btn select_race_btn"><a href="https://www.kickstarter.com/profile/arttavern"
+            target="_blanc">kickstarter page</a></div>
+      </section>
+      <div class="container_bg_img_pc">
+        <section id="plans_n_goals" class="plans_n_goals">
+          <div class="star-icon mobile"> <img src="img/star_icon.svg" alt=""></div>
+          <h2 class="lng-plans_n_goals">НАШИ ПЛАНЫ И ЦЕЛИ</h2>
+          <div class="plans_n_goals_container">
+            <div class="plans_n_goals_col_1">
+              <div class="star-icon pc"> <img src="img/star_icon.svg" alt=""></div>
+              <div class="textbox mobile">
+                <h3 class="lng-pandg-mh1">Невероятная кастомизация</h3>
+              </div>
+              <div class="plans_n_goals_col_1_img"> <img onclick= "modalPopUp(1)" src="img/plans_n_goals-1.png" alt=""></div>
+              <div class="textbox ">
+                <h3 class="pc lng-pandg-h1">Невероятная кастомизация</h3>
+                <p class="lng-pandg-p1">Сейчас ты можешь попробовать создать персонажей таких рас как: Драконорожденный, Дварф и Тифлинг. Мы
+                  планируем постепенно добавлять в редактор расы из разных книг, связанных с НРИ, чтобы расширить
+                  возможность для твоего творчества. Art Tavern будет пополняться большим разнообразием одежды, оружия и
+                  аксессуаров как для новых рас героев, так и для уже созданных раннее.</p>
+              </div>
+            </div>
+            <div class="plans_n_goals_modal modal_1">
+              <svg onclick= "closeModalPopUp(1)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="close" >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <img src="img/plans_n_goals-1.png" alt="">
+              <h3 class="lng-pandg-modh1">Невероятная кастомизация</h3>
+            </div>
+            <div class="plans_n_goals_col_2">
+              <div class="textbox mobile">
+                <h3 class="lng-pandg-mh2">Текстовый редактор</h3>
+              </div>
+              <div class="plans_n_goals_col_2_img"> <img onclick= "modalPopUp(2)" src="img/plans_n_goals-2.png" alt=""></div>
+              <div class="textbox">
+                <h3 class="lng-pandg-h2 pc">Текстовый редактор</h3>
+                <p class="lng-pandg-p2">После визуализации своего персонажа сразу же приступай к созданию его уникального сюжета в удобном
+                  текстовом редакторе. Мы планируем добавить разные стилизованные листы для записи характеристик и
+                  истории персонажей. Коллекция твоих историй и изображений героев может быть закрыта или открыта для
+                  чтения другими людьми, как ты захочешь.</p>
+              </div>
+            </div>
+            <div class="plans_n_goals_modal modal_2">
+              <svg onclick= "closeModalPopUp(2)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="close">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <img src="img/plans_n_goals-2.png" alt="">
+              <h3 class="lng-pandg-modh2">Текстовый редактор</h3>
+            </div>
+            <div class="plans_n_goals_col_3_n_4">
+              <div class="textbox mobile">
+                <h3 class="lng-pandg-h3">Мобильное приложение</h3>
+              </div>
+              <div class="plans_n_goals_col_3">
+                <div class="plans_n_goals_col_3_img "><img onclick= "modalPopUp(3)" src="img/plans_n_goals-3.1.png" alt=""></div>
+                <div class="plans_n_goals_col_3_img "><img onclick= "modalPopUp(3)" src="img/plans_n_goals-3.2.png" alt=""></div>
+                <div class="plans_n_goals_col_3_img "><img onclick= "modalPopUp(3)" src="img/plans_n_goals-3.3.png" alt=""></div>
+              </div>
+              <div class="plans_n_goals_modal modal_3">
+                <svg onclick= "closeModalPopUp(3)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="close">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <img src="img/plans_n_goals-3.png" alt="">
+                <h3 class="lng-pandg-modh3">Мобильное приложение</h3>
+              </div>
+              <div class="plans_n_goals_col_4">
+                <div class="textbox">
+                  <h3 class="lng-pandg-h4 pc">Все для вашей игры</h3>
+                  <p class="lng-pandg-p4">Обычно игрок видит перед собой только лист с именем и характеристиками — мы определенно думаем, что
+                    этого мало! Предлагаем поставить на стол акриловый стенд со своим персонажем, который легко заказать
+                    прямо из редактора, или отправить мастеру карточку вашего героя, где хранится его история, визуал, и
+                    листы характеристик, подготовленные под конкретный кампейн.</p>
+                </div>
+                <div class="plans_n_goals_col_4_img"><img onclick= "modalPopUp(4)" src="img/plans_n_goals-4.png" alt=""></div>
+              </div>
+              <div class="plans_n_goals_modal modal_4">
+                <svg onclick= "closeModalPopUp(4)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="close">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <img src="img/plans_n_goals-4.png" alt="">
+                <h3 class="lng-pandg-modh4">Все для вашей игры</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="roadmap" class="roadmap">
+          <div class="kickstarter_logo"><img src="img/kickstarter-name.svg" alt=""></div>
+          <h2 class="lng-roadmap">ROADMAP:</h2>
+
+          <div class="roadmap_container">
+            <div class="line pc"></div>
+            <div class="roadmap_card">
+              <div class="star-icon">
+                <img src="img/star_2023_icon.svg" alt="">
+              </div>
+              <div class="textbox">
+                <h3 class="lng-roadmap-1-h">Предпродакшен</h3>
+                <p class="lng-roadmap-1-p">Создание прототипа конструктора персонажей и первой версии вебсайта.
+                  Наполнение и подготовка Кикстартера.
+                </p>
+              </div>
+            </div>
+            <div class="roadmap_card">
+              <div class="star-icon"> <img src="img/star_2024_icon.svg" alt=""></div>
+              <div class="textbox">
+                <h3 class="lng-roadmap-2-h">Старт Кикстартера</h3>
+              </div>
+            </div>
+            <div class="roadmap_card">
+              <div class="star-icon">
+                <img src="img/star_icon.svg" alt="">
+              </div>
+              <div class="textbox">
+                <h3 class="lng-roadmap-3-h">Ранний доступ</h3>
+                <p class="lng-roadmap-3-p">Создание основных рас и деталей для конструктора: Гном, Дварф, Драконнорожденный, Полуорк,
+                  Полурослик, Полуэльф, Тифлинг, Человек, Эльф.
+                </p>
+              </div>
+            </div>
+            <div class="roadmap_card">
+              <div class="star-icon"> <img src="img/star_2025_icon.svg" alt=""></div>
+              <div class="textbox">
+                <h3 class="lng-roadmap-4-h">Полный доступ</h3>
+                <p class="lng-roadmap-4-p">Создание текстового редактора и дополнительных 15 рас для конструктора:
+                  Аасимар, Багбир, Гит, Гоблин,
+                  Голиаф, Грунг, Кенку, Кобольд,
+                  Лизардфолк, Орк, Табакси, Тритон, Фирболг, Хобгоблин, Юань-Ти.
+                </p>
+              </div>
+            </div>
+            <div class="roadmap_card">
+              <div class="star-icon"> <img src="img/star_icon.svg" alt=""></div>
+              <div class="textbox">
+                <h3 class="lng-roadmap-5-h">Масшабирование</h3>
+                <p class="lng-roadmap-5-p">Разработка мобильного приложения и экосистемы для хранения и чтения историй.</p>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap_supportUs_container">
+            <p class="lng-support-us">Приглашаем тебя следить за развитием проекта и влиять на ход разработки с помощью Бусти или Патреона</p>
+            <div class="roadmap_supportUs_btn_img"><img src="img/roadmap_img.png" alt=""></div>
+            <div class="link-btn roadmap_supportUs_btn">
+              <a href="https://boosty.to/glint" target="_blanc">boosty</a>
+              <a href="https://www.patreon.com/glint" target="_blanc">patreon</a>
+            </div>
+          </div>
+        </section>
+        <section id="our_team" class="our_team">
+          <h2 class="lng-our-team">наша команда</h2>
+          <div class="our_team_container">
+              <div class="our_team_card">
+                <img src="img/our-team-1.png" alt="">
+                <p class="lng-our-team-1">Marina Evlanova (Cki Leru)</br>founder and creative director</p>
+              </div>
+              <div class="our_team_card">
+                <img src="img/our-team-2.png" alt="">
+                <p class="lng-our-team-2">Heathery</br>web developer</p>
+              </div>
+              <div class="our_team_card">
+                <img src="img/our-team-3.png" alt="">
+                <p class="lng-our-team-3">Future Tavern Member</br>D&D master and consultant</p>
+              </div>
+              <div class="our_team_card">
+                <img src="img/our-team-4.png" alt="">
+                <p class="lng-our-team-4">Future Tavern Member</br>marketing strategist</p>
+              </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="social_media_links">
+          <a class="footer_link" href="https://www.kickstarter.com/profile/arttavern" target="_blanc"><img
+              src="img/kickstarter_icon.svg" alt=""></a>
+          <a class="footer_link" href="https://www.instagram.com/evlanovart/" target="_blanc"><img
+              src="img/instagram_icon.svg" alt=""></a>
+          <a class="footer_link" href="https://twitter.com/arttavern9" target="_blanc"><img src="img/twitter_icon.svg"
+              alt=""></a>
+          <a class="footer_link" href="https://www.patreon.com/glint" target="_blanc"><img src="img/patreon_icon.svg"
+              alt=""></a>
+          <a class="footer_link" href="https://boosty.to/glint" target="_blanc"><img src="img/boosty_icon.svg"
+              alt=""></a>
+        </div>
+        <h2>art tavern 2023</h2>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
